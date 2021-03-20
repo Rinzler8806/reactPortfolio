@@ -2,6 +2,8 @@
 
 :root {
   --primary-white: #fff;
+  --primary-green: #6eccb1;
+  --primary-black: rgba(255,255,255,0);
 }
 
 .App {
@@ -51,7 +53,7 @@
 
 /* Menu Links */
 Nav a.nav-link {
-  font-size: .8rem;
+  font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.0375rem;
   cursor: pointer;
@@ -69,10 +71,19 @@ nav ul li {
   margin-right: 12px;
   margin-left: 12px;
   color: var(--primary-white) !important;
+  border-top: 0.1875rem solid var(--primary-black);
 }
 
 .navbar-brand {
   max-width: 17.25rem;
   padding: 0 !important;
   height: 13rem !important;
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+  border-top: 0.1875rem solid var(--primary-green);
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--primary-green);
 }
