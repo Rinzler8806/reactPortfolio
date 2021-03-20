@@ -87,6 +87,12 @@ nav ul li {
   height: 13rem !important;
 }
 
+@media(max-width: 768px) {
+  .navbar-brand {
+    font-size: 7rem;
+  }
+}
+
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
   border-top: 0.1875rem solid var(--primary-green);
 }
@@ -104,6 +110,13 @@ nav ul li {
   height: 90vh;
 }
 
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-hover-purple);
+  color: var(--primary-white);
+  transition: .2s ease-in-out;
+}
+
 .main-info {
   display: flex;
   position: absolute;
@@ -116,6 +129,7 @@ nav ul li {
   align-items: center;
   text-align: center;
   font-family: "Roboto Condensed" sans-serif;
+  z-index: 1;
 }
 
 .main-info h1 {
@@ -127,6 +141,15 @@ nav ul li {
 .typed-text {
   font-size: 2rem;
   color: var(--primary-white);
+}
+
+@media(max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.5rem !important;
+  }
+  .typed-text {
+    font-size: 1.7rem !important;
+  }
 }
 
 /* //Header main offer button */
@@ -145,4 +168,10 @@ nav ul li {
   height: 100vh;
   width: 100vw;
   z-index: 1;
+}
+
+@media(max-width: 768px) {
+  .particles-canvas {
+    display: none;
+  }
 }
