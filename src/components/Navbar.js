@@ -3,6 +3,7 @@ import Logo from "../shaneLogo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
+
 const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-dark">
@@ -22,6 +23,9 @@ const Navbar = () => {
                         </li>
                         <li className="nav-item">
                         <a className="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li className="nav-item">
+                        <a className="nav-link" href="#">Resume</a>
                         </li>
                         <li className="nav-item">
                         <a className="nav-link" href="#">Contact</a>
