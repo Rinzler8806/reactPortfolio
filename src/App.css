@@ -6,6 +6,9 @@
   --primary-black: rgba(255,255,255,0);
   --primary-purple:rgba(235,52,216);
   --primary-hover-purple: rgba(242,36,222);
+  --primary-grey: #ccd1d9;
+  --primary-dark-grey: #666666;
+  --primary-blue: #1e90ff;
 
 }
 
@@ -178,6 +181,8 @@ nav ul li {
 
 /* About */
 
+
+
 .profile-img {
   width: 16rem;
   border-radius: 50%;
@@ -200,4 +205,68 @@ nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Experience */
+
+.experience-wrapper {
+  position: absolute;
+  padding: 3.125rem;
+  overflow: hidden;
+}
+
+.experience h1 {
+  text-transform: uppercase;
+  color: var(--primary-green);
+}
+
+.experience-wrapper::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  margin-left: -0.0625rem;
+  width: 0.125rem;
+  height: 100%;
+  background: var(--primary-grey);
+  z-index: 1;
+}
+
+.timeline-block {
+  width: calc(50% + 0.5rem);
+  display: flex;
+  justify-content: space-between;
+  clear: both;
+}
+
+.timeline-block-right {
+  float: right;
+}
+
+.timeline-block-left {
+  float: left;
+  direction: rtl;
+}
+
+.marker {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 0.3125rem solid var(--primary-dark-grey);
+  background-color: var(--primary-green);
+  margin-top: 0.625rem;
+  z-index: 3;
+}
+
+.timeline-content {
+  width: 95%;
+  padding: 0 0.9375rem;
+  color: var(--primary-dark-grey);
+  direction: ltr;
+}
+
+.timeline-content h3 {
+  margin-top: 0.3125rem;
+  color: var(--primary-blue);
+  font-weight: 900;
 }
