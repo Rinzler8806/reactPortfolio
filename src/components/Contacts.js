@@ -1,103 +1,157 @@
-import React from "react";
-import { makeStyles, withStyles } from "@material-ui/core/styles";
-import { TextField, Typography, Button, Grid, Box } from "@material-ui/core";
-import SendIcon from "@material-ui/icons/Send";
-import Navbar from "./Navbar";
+import React, { useState } from 'react';
+import emailjs from "emailjs-com";
+import {useForm} from "react-hook-form";
 
-const useStyles = makeStyles((theme) => ({
-  form: {
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    position: "absolute",
-  },
-  button: {
-    marginTop: "1rem",
-    color: "tomato",
-    borderColor: "tomato",
-  },
-}));
+export const Contacts = () => {
+  const [successMessage, setSuccessMessage] = useState("");
+  const { register, handleSubmit, errors } = useForm();
 
-const InputField = withStyles({
-  root: {
-    "& label.Mui-focused": {
-      color: "tomato",
-    },
-    "& label": {
-      color: "tan",
-    },
-    "& .MuiOutlinedInput-root": {
-      "& fieldset": {
-        borderColor: "tan",
-      },
-      "&:hover fieldset": {
-        borderColor: "tan",
-      },
-      "&.Mui-focused fieldset": {
-        borderColor: "tan",
-      },
-    },
-  },
-})(TextField);
+  const serviceID = "service_ID";
+  const templateID = "template_ID";
+  const userID = "user_WYRCrgFmoZBMnOZ8M7rWc";
 
-const Contacts = () => {
-  const classes = useStyles();
+  const onSubmit = (data, r) => {
+    sendEmail(serviceID,
+      templateID,
+      {
+        name: data.name,
+        phone: data.phone,
+        email: data.email,
+        subject: data.subject,
+        description: data.description
+      },
+      userID
+      )
+      r.target.reset();
+  }
+
+  const sendEmail = (serviceID, templateID, variables, userID) => {
+    
+    emailjs.send(serviceID, templateID, variables, userID)
+      .then(() => {
+        setSuccessMessage("Inquiry sent successfully! I'll contact you as soon as possible.");
+      }).catch(err => console.error(`Something went wrong ${err}`));
+  }
 
   return (
-    <Box component="div" style={{ background: "#233", height: "100vh" }}>
-      <Navbar />
-      <Grid container justify="center">
-        <Box component="form" className={classes.form}>
-          <Typography
-            variant="h5"
-            style={{
-              color: "tomato",
-              textAlign: "center",
-              textTransform: "uppercase",
-            }}
-          >
-            hire or contact me...
-          </Typography>
-          <InputField
-            fullWidth={true}
-            label="Name"
-            variant="outlined"
-            inputProps={{ style: { color: "white" } }}
-            margin="dense"
-            size="medium"
-          />
-          <br />
+    <div className="contacts">
+      <div className="text-center">
+      <h1>Contact me</h1>
+      <p>Please fill out the below and I will respond shortly</p>
+      <span className="success-message">{successMessage}</span>
+      </div>
+      <div className="container">
+        <form onSubmit={handleSubmit(onSubmit)}>
+        <div className="row">
+          <div className="col-md-6 col-xs-12">
+            {/* NAME INPUT */}
+            <div className="text-center">
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Name"
+              name="name"
+              ref={
+                register({
+                  required: "Please enter your name",
+                  maxLength: {
+                    value: 20,
+                    message: "Please enter a name with fewer than 20 characters"
+                  }
+                })
+              }
+            />
+            <div className="line"></div>
+            </div>
+            <span className="error-message">
+              {errors.name && errors.name.message}
+            </span>
+            {/* PHONE INPUT */}
+            <div className="text-center">
+            <input
+            type="text"
+              className="form-control"
+              placeholder="Phone Number"
+              name="phone"
+              ref={
+                register({
+                  required: "Please add your phone number",
+                })
+              }
+            />
+            <div className="line"></div>
+            </div>
+            <span className="error-message">
+              {errors.phone && errors.phone.message}
+            </span>
+            {/* EMAIL INPUT */}
+            <div className="text-center">
+            <input
+              type="email"
+              className="form-control"
+              placeholder="Email"
+              name="email"
+              ref={
+                register({
+                  required: "Please enter your email address",
+                  pattern: {
+                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                    message: "invalid Email"
+                  }
+                })
+              }
+            />
+            <div className="line">
+            </div>
+            </div>
+            <span className="error-message">
+              {errors.email && errors.email.message}
+            </span>
+            {/* SUBJECT INPUT */}
+            <div className="text-center">
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Subject"
+              name="subject"
+              ref={
+                register({
+                  required: "Please enter a subject title",
+                })
+              }
+            />
+            <div className="line"></div>
+            </div>
+            <span className="error-message">
+              {errors.subject && errors.subject.message}
+            </span>
+          </div>
+          <div className="col-md-6 col-cs-12">
+            {/* DESCRIPTION */}
+            <div className="text-center">
+            <textarea
+              type="text"
+              className="form-control"
+              placeholder="Please add a short description of your inquiry"
+              name="description"
+              ref={
+                register({
+                  required: "Please enter a description",
+                })
+              }
+            ></textarea>
+            <div className="line"></div>
+            </div>
+            <span className="error-message">
+              {errors.description && errors.description.message}
+            </span>
+            <button className="btn-main-offer contact-btn" type="submit">Contact Me</button>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+  )
+}
 
-          <InputField
-            fullWidth={true}
-            label="Email"
-            variant="outlined"
-            inputProps={{ style: { color: "white" } }}
-            margin="dense"
-            size="medium"
-          />
-          <br />
-          <InputField
-            fullWidth={true}
-            label="Company name"
-            variant="outlined"
-            inputProps={{ style: { color: "white" } }}
-            margin="dense"
-            size="medium"
-          />
-          <br />
-          <Button
-            className={classes.button}
-            variant="outlined"
-            fullWidth={true}
-            endIcon={<SendIcon />}
-          >
-            contact me
-          </Button>
-        </Box>
-      </Grid>
-    </Box>
-  );
-};
-
-export default Contacts;
+export default Contacts

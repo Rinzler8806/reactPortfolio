@@ -4,10 +4,9 @@ import Particles from "react-particles-js";
 import Navbar from "./components/Navbar"
 import Header from "./components/Header"
 import About from "./components/About";
-// import Portfolio from "./components/Portfolio";
 import Experience from "./components/Experience";
 import Portfolio from './components/Portfolio';
-// import Contact from "./components/Contact";
+import Contacts from './components/Contacts';
 
 
 function App() {
@@ -39,6 +38,7 @@ function App() {
     <About />
     <Experience />
     <Portfolio />
+    <Contacts />
     </>
     
   );
