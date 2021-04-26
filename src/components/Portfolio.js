@@ -31,7 +31,15 @@ const Portfolio = () => {
     <b>GitHub: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/Rinzler8806/Popular-Restaurants-of-the-World-1")}>https://github.com/Rinzler8806/Popular-Restaurants-of-the-World-1</a>
     </>
     )
-    PopupboxManager.open({content})
+    PopupboxManager.open({content});
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          text: "Popular Restaurants of the World",
+        },
+      },
+    });
   }
 
   const popupboxConfigProw = {
@@ -48,7 +56,7 @@ const Portfolio = () => {
     const content = (
     <>
     <img className="portfolio-image-popupbox" src={fitnesstracker} alt="fitnesstracker"/>
-    <p> Fitness Tracker
+    <p>
 <br></br>
 <br></br>
 This app has been created with the intention to be able to view create and track daily workouts. The user will be able to log multiple exercises in a workout on a given day. The user will also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, the user will be able to track their distance traveled.
@@ -58,7 +66,15 @@ This app has been created with the intention to be able to view create and track
     <b>GitHub: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/Rinzler8806/fitnessTracker")}>https://github.com/Rinzler8806/fitnessTracker</a>
     </>
     )
-    PopupboxManager.open({content})
+    PopupboxManager.open({content});
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          text: "Fitness Tracker",
+        },
+      },
+    });
   }
 
   const popupboxConfigFitnesstracker = {
@@ -75,19 +91,16 @@ This app has been created with the intention to be able to view create and track
     const content = (
     <>
     <img className="portfolio-image-popupbox" src={budgettracker} alt="budgettracker"/>
-    <p> Budget Tracker
+    <p>
 <br></br>
 <br></br>
 The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
 <br></br>
 Offline Functionality:
-<br></br>
-Enter deposits offline
-<br></br>
-Enter expenses offline
+Enter deposits offline.
+Enter expenses offline.
 <br></br>
 When brought back online:
-<br></br>
 Offline entries should be added to tracker.
     </p>
     <b>Demo: </b> <a className="hyper-link" onClick={() => window.open("https://fathomless-sea-54648.herokuapp.com/", "_blank")}>https://fathomless-sea-54648.herokuapp.com/</a>
@@ -95,7 +108,15 @@ Offline entries should be added to tracker.
     <b>GitHub: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/Rinzler8806/BudgetTracker")}>https://github.com/Rinzler8806/BudgetTracker</a>
     </>
     )
-    PopupboxManager.open({content})
+    PopupboxManager.open({content});
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          text: "Budget Tracker",
+        },
+      },
+    });
   }
 
   const popupboxConfigBudgettracker = {
@@ -124,7 +145,15 @@ Offline entries should be added to tracker.
       <b>GitHub: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/Rinzler8806/pangea-chat")}>https://github.com/Rinzler8806/pangea-chat</a>
       </>
       )
-      PopupboxManager.open({content})
+      PopupboxManager.open({content});
+      PopupboxManager.update({
+        content,
+        config: {
+          titleBar: {
+            text: "Pangea",
+          },
+        },
+      });
     }
   
     const popupboxConfigPangea = {

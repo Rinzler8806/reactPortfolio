@@ -312,6 +312,7 @@ nav ul li {
   width: 15rem;
   border: 1px solid var(--primary-green);
   padding: 0 0.5rem;
+  justify-content: center;
 }
 
 .portfolio-image-box {
