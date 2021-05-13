@@ -21,7 +21,7 @@ const Portfolio = () => {
     As a traveler, I want to be able to search a location for surrounding restaurants so that I can find a local establishment to fit my needs.
 <br></br>
 <br></br>
-      uses Foundation css framework
+      Uses Foundation css framework
       application utilizes Zomato, and Google API's to retreve restaurant data
       user can search restaurants around the world based on location and food type
       user searched cities are saved to local storage and can be accessed via the navbar
@@ -171,26 +171,26 @@ Offline entries should be added to tracker.
     <div id="Portfolio" className="portfolio-wrapper">
       <div className="container">
         <h1 className="text-uppercase text-center py-5">Portfolio</h1>
-        <div Classname="image-box-wrapper row justify-content-center">
-          <div Classname="portfolio-image-box" onClick={openPopupboxProw}>
+        <div className="image-box-wrapper row justify-content-center">
+          <div className="portfolio-image-box" onClick={openPopupboxProw}>
           <img className="portfolio-image" src={prw} alt="prw" />
           <div className="overflow"></div>
           <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
         </div>
         {/* - */}
-        <div Classname="portfolio-image-box" onClick={openPopupboxFitnesstracker}>
+        <div className="portfolio-image-box" onClick={openPopupboxFitnesstracker}>
           <img className="portfolio-image" src={fitnesstracker} alt="fitnesstracker" />
           <div className="overflow"></div>
           <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
         </div>
         {/* - */}
-        <div Classname="portfolio-image-box" onClick={openPopupboxBudgettracker}>
+        <div className="portfolio-image-box" onClick={openPopupboxBudgettracker}>
           <img className="portfolio-image" src={budgettracker} alt="budgettracker" />
           <div className="overflow"></div>
           <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
         </div>
         {/* - */}
-        <div Classname="portfolio-image-box" onClick={openPopupboxPangea}>
+        <div className="portfolio-image-box" onClick={openPopupboxPangea}>
           <img className="portfolio-image" src={pangea} alt="pangea" />
           <div className="overflow"></div>
           <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
