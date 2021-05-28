@@ -119,7 +119,7 @@ nav ul li {
 .btn-main-offer:hover {
   text-decoration: none;
   background-color: var(--primary-hover-purple);
-  color: var(--primary-white);
+  color: var(--primary-black);
   transition: .2s ease-in-out;
 }
 
@@ -236,6 +236,22 @@ nav ul li {
   height: 100%;
   background: var(--primary-grey);
   z-index: 1;
+}
+
+.btn-main-offer-experience {
+  /* border: 1px solid var(--primary-purple); */
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 0.625rem 10px 12px 12px 12px;
+  color: var(--primary-blue);
+  margin: 2rem;
+}
+
+.btn-main-offer-experience:hover {
+  text-decoration: none;
+  background-color: var(--primary-hover-purple);
+  color: var(--primary-black);
+  transition: .3s ease-in-out;
 }
 
 .timeline-block {

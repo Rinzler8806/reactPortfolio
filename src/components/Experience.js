@@ -1,10 +1,14 @@
 import React from "react";
+// import resume from "../images/Rogers_ShaneResume_05"
 
 const Experience = () => {
   return (
     <div id="Experience" className="experience">
       <div className="d-flex justify-content-center my-5">
       <h1>Experience</h1>
+    </div>
+    <div className="d-flex justify-content-center my-5">
+    <a href="https://drive.google.com/file/d/1OcUqMbDZ0OtgAnNS7iGPEJDAuLoEqsJY/view?usp=sharing" download className="btn-main-offer-experience">Download Resume</a>
     </div>
     <div className="container experience-wrapper">
       <div className="timeline-block timeline-block-right">
@@ -14,15 +18,15 @@ const Experience = () => {
             <p>State Street
               <br></br>
               <br></br>
-              ●	Coordinate with onshore and offshore teams to facilitate resolutions and present results to management.
+              ●	Coordinated onshore and offshore teams to facilitate resolutions and present results to management.
               <br></br>
               ●	Investigated exceptions and problems affecting accounting records or prices.
               <br></br>
               ●	Helped to reduce risk to clients and improve efficiency through various projects.
               <br></br>
-              ●	Composed daily and weekly reports to senior management on fund activities and other operational issues.
+              ●	Worked directly with clients to reduce risk and improve efficiency through various projects.
               <br></br>
-              ●	Review of daily audit checklists from the China and India offshore teams to ensure compliance.
+              ●	Composed daily and weekly reports to senior management on fund activities and other operational issues.
             </p>
           </div>
         </div>
@@ -36,13 +40,11 @@ const Experience = () => {
               <br></br>
               ●	Preparation, maintenance, and implementation of various document control entities such as daily reports, material procurement logs, submittal logs, as-builts, testing and inspection logs, RFI logs, and change order logs.
               <br></br>
-              ●	Understanding, drafting, and enforcement of contracts.
+              ●	Understanding, drafting, and enforcement of contracts, which saved the company over $200,000.
               <br></br>
-              ●	Assist the superintendent and project manager in the implementation of policies and the execution of the project.
+              ●	Implemented policies and managed the successful execution of projects with values over $100 million.
               <br></br>
-              ●	Manage various scopes of work from numerous subcontractors.
-              <br></br>
-              ●	Project management.
+              ●	Managed various scopes of work from numerous subcontractors to ensure the schedule and budget was met.
             </p>
           </div>
         </div>
@@ -54,13 +56,13 @@ const Experience = () => {
             <p>ITS Solutions
               <br></br>
               <br></br>
-              ●	Assist the Inspector of Record with documentation and processing of daily field reports.
+              ●	Successfully implemented new technologies and trained staff resulting in increased efficiency by over 60%, which empowered the company to bid more jobs.
               <br></br>
-              ●	Documentation and review of contractor inspection requests.
+              ●	Accurately composed hundreds of daily field reports which were sent to the California Department of the State Architect for review.
               <br></br>
-              ●	Review of the contract documents to ensure they meet the standards specified in the California Building Code.
+              ●	Managed and scheduled field special inspectors to facilitate accurate testing per the California building code.
               <br></br>
-              ●	Perform field audits to ensure material is installed per the contract requirements.
+              ●	Meticulously reviewed the contract documents to ensure compliance with the standards specified in the California Building Code.
             </p>
           </div>
       </div>
