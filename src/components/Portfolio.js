@@ -61,7 +61,7 @@ const Portfolio = () => {
 <br></br>
 This app has been created with the intention to be able to view create and track daily workouts. The user will be able to log multiple exercises in a workout on a given day. The user will also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, the user will be able to track their distance traveled.
     </p>
-    <b>Demo: </b> <a className="hyper-link" onClick={() => window.open("https://infinite-beach-02354.herokuapp.com/exercise?id=6065391b3f573d0015bbd57e", "_blank")}>https://infinite-beach-02354.herokuapp.com/exercise?id=6065391b3f573d0015bbd57e</a>
+    <b>Demo: </b> <a className="hyper-link" onClick={() => window.open("https://fitnesstracker808.herokuapp.com/exercise?id=60b84fdcf99be00015ab65f6", "_blank")}>https://fitnesstracker808.herokuapp.com/exercise?id=60b84fdcf99be00015ab65f6</a>
     <br></br>
     <b>GitHub: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/Rinzler8806/fitnessTracker")}>https://github.com/Rinzler8806/fitnessTracker</a>
     </>
