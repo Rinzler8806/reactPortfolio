@@ -17,16 +17,14 @@ const Portfolio = () => {
     const content = (
     <>
     <img className="portfolio-image-popupbox" src={prw} alt="prw"/>
-    <p> Description of Popular Restaurants of the World
-    As a traveler, I want to be able to search a location for surrounding restaurants so that I can find a local establishment to fit my needs.
+    <p> Description: As a traveler, I want to be able to search a location for surrounding restaurants so that I can find a local establishment to fit my needs.
 <br></br>
-<br></br>
-      Uses Foundation css framework
-      application utilizes Zomato, and Google API's to retreve restaurant data
-      user can search restaurants around the world based on location and food type
-      user searched cities are saved to local storage and can be accessed via the navbar
-      when user inputs a location and food type the page will scroll to an embedded map with markers displaying local restaurants that meet search criteria
-      when user clicks on map marker info about the restaurant will be displayed as well as a get directions link
+      User can search restaurants around the world based on location and food type.
+      User searched cities are saved to local storage and can be accessed via the navbar.
+      When user inputs a location and food type the page will scroll to an embedded map with markers displaying local restaurants that meet search criteria.
+      When user clicks on map marker info about the restaurant will be displayed as well as a get directions link
+      <br></br>
+      Tools: Javascript, Zomato API, Foundation CSS framework, and Google API's to retrieve restaurant data.
     </p>
     <b>Demo: </b> <a className="hyper-link" onClick={() => window.open("https://wattierdan.github.io/Popular-Restaurants-of-the-World/", "_blank")}>https://wattierdan.github.io/Popular-Restaurants-of-the-World/</a>
     <br></br>
@@ -61,7 +59,11 @@ const Portfolio = () => {
     <p>
 <br></br>
 <br></br>
-This app has been created with the intention to be able to view create and track daily workouts. The user will be able to log multiple exercises in a workout on a given day. The user will also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, the user will be able to track their distance traveled.
+This app has been created with the intention to be able to view create and track daily workouts. The user will be able to log multiple exercises in a workout on a given day.
+ The user will also be able to track the name, type, weight, sets, reps, and duration of exercise.
+  If the exercise is a cardio exercise, the user will be able to track their distance traveled.
+  <br></br>
+  Tools: Express, MongoDB, NodeJS, JSON
     </p>
     <b>Demo: </b> <a className="hyper-link" onClick={() => window.open("https://fitnesstracker808.herokuapp.com/exercise?id=60b84fdcf99be00015ab65f6", "_blank")}>https://fitnesstracker808.herokuapp.com/exercise?id=60b84fdcf99be00015ab65f6</a>
     <br></br>
@@ -101,9 +103,10 @@ The user will be able to add expenses and deposits to their budget with or witho
 Offline Functionality:
 Enter deposits offline.
 Enter expenses offline.
-<br></br>
 When brought back online:
 Offline entries should be added to tracker.
+<br></br>
+Tools: HTML, CSS, JavaScript, Bootstrap, Service-Worker
     </p>
     <b>Demo: </b> <a className="hyper-link" onClick={() => window.open("https://fathomless-sea-54648.herokuapp.com/", "_blank")}>https://fathomless-sea-54648.herokuapp.com/</a>
     <br></br>
@@ -141,6 +144,8 @@ Offline entries should be added to tracker.
   A dynamic messaging application that connects users around the globe. It offers many features and the ability to actively translate your message to a selected language.
   <br></br>
   Log in as: Batman and use password: password to view demo.
+  <br></br>
+  Tools: NodeJS, Chat Engine API, React, React-Bootstrap, Chat Engine UI, Libre Translate
       </p>
       <b>Demo: </b> <a className="hyper-link" onClick={() => window.open("https://pangeachat.herokuapp.com/", "_blank")}>https://pangeachat.herokuapp.com/</a>
       <br></br>
