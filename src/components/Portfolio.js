@@ -28,6 +28,8 @@ const Portfolio = () => {
       when user inputs a location and food type the page will scroll to an embedded map with markers displaying local restaurants that meet search criteria
       when user clicks on map marker info about the restaurant will be displayed as well as a get directions link
     </p>
+    <b>Demo: </b> <a className="hyper-link" onClick={() => window.open("https://wattierdan.github.io/Popular-Restaurants-of-the-World/", "_blank")}>https://wattierdan.github.io/Popular-Restaurants-of-the-World/</a>
+    <br></br>
     <b>GitHub: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/Rinzler8806/Popular-Restaurants-of-the-World-1")}>https://github.com/Rinzler8806/Popular-Restaurants-of-the-World-1</a>
     </>
     )
