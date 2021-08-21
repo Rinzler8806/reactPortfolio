@@ -26,20 +26,20 @@ const Portfolio = () => {
       <br></br>
       Tools: Javascript, Zomato API, Foundation CSS framework, and Google API's to retrieve restaurant data.
     </p>
-    <b>Demo: </b> <a className="hyper-link" onClick={() => window.open("https://wattierdan.github.io/Popular-Restaurants-of-the-World/", "_blank")}>https://wattierdan.github.io/Popular-Restaurants-of-the-World/</a>
+    <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://wattierdan.github.io/Popular-Restaurants-of-the-World/", "_blank")}>https://wattierdan.github.io/Popular-Restaurants-of-the-World/</a>
     <br></br>
-    <b>GitHub: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/Rinzler8806/Popular-Restaurants-of-the-World-1")}>https://github.com/Rinzler8806/Popular-Restaurants-of-the-World-1</a>
+    <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Rinzler8806/Popular-Restaurants-of-the-World-1")}>https://github.com/Rinzler8806/Popular-Restaurants-of-the-World-1</a>
     </>
     )
-    PopupboxManager.open({content});
-    PopupboxManager.update({
-      content,
-      config: {
-        titleBar: {
-          text: "Popular Restaurants of the World",
-        },
-      },
-    });
+    PopupboxManager.open({ content })
+    // PopupboxManager.update({
+    //   content,
+    //   config: {
+    //     titleBar: {
+    //       text: "Popular Restaurants of the World",
+    //     },
+    //   },
+    // });
   }
 
   const popupboxConfigProw = {
