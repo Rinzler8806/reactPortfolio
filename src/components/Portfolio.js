@@ -32,14 +32,14 @@ const Portfolio = () => {
     </>
     )
     PopupboxManager.open({ content })
-    // PopupboxManager.update({
-    //   content,
-    //   config: {
-    //     titleBar: {
-    //       text: "Popular Restaurants of the World",
-    //     },
-    //   },
-    // });
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          text: "Popular Restaurants of the World",
+        },
+      },
+    });
   }
 
   const popupboxConfigProw = {
