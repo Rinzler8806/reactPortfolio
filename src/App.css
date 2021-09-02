@@ -5,7 +5,7 @@
   --primary-green: #6eccb1;
   --primary-dark: rgba(255,255,255,0);
   --primary-purple:rgba(235,52,216);
-  --primary-hover-purple: rgba(242,36,222);
+  --primary-hover-purple: linear-gradient(-225deg, #ac32e4 0%, #7918f2 48%, #4801ff 100%);
   --primary-grey: #ccd1d9;
   --primary-dark-grey: #666666;
   --primary-blue: #1e90ff;
@@ -112,6 +112,7 @@ nav ul li {
 }
 
 .fixed-top {
+  position: 
   top: 0%;
   right: 0;
   left: 0;
