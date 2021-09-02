@@ -108,7 +108,7 @@ Offline entries should be added to tracker.
 <br></br>
 Tools: HTML, CSS, JavaScript, Bootstrap, Service-Worker
     </p>
-    <b>Demo: </b> <a className="hyper-link" onClick={() => window.open("https://fathomless-sea-54648.herokuapp.com/", "_blank")}>https://fathomless-sea-54648.herokuapp.com/</a>
+    <b>Demo: </b> <a className="hyper-link" onClick={() => window.open("https://budgettracker916.herokuapp.com/", "_blank")}>https://budgettracker916.herokuapp.com/</a>
     <br></br>
     <b>GitHub: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/Rinzler8806/BudgetTracker")}>https://github.com/Rinzler8806/BudgetTracker</a>
     </>
