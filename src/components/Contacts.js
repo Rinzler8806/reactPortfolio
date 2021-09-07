@@ -37,7 +37,7 @@ export const Contacts = () => {
     <div id="Contacts" className="contacts">
       <div className="text-center">
       <h1>Contact me</h1>
-      <p>Please fill out the below and I will respond shortly</p>
+      <div className="pt-3">Please fill out the below and I will respond shortly</div>
       <span className="success-message">{successMessage}</span>
       </div>
       <div className="container">

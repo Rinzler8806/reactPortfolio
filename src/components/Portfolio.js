@@ -17,8 +17,7 @@ const Portfolio = () => {
     const content = (
     <>
     <img className="portfolio-image-popupbox" src={prw} alt="prw"/>
-    <p> Description: As a traveler, I want to be able to search a location for surrounding restaurants so that I can find a local establishment to fit my needs.
-<br></br>
+    <p> Description:
       User can search restaurants around the world based on location and food type.
       User searched cities are saved to local storage and can be accessed via the navbar.
       When user inputs a location and food type the page will scroll to an embedded map with markers displaying local restaurants that meet search criteria.
@@ -26,9 +25,9 @@ const Portfolio = () => {
       <br></br>
       Tools: Javascript, Zomato API, Foundation CSS framework, and Google API's to retrieve restaurant data.
     </p>
-    <b>Demo:</b> <a className="hyper-link" onClick={() => window.open("https://wattierdan.github.io/Popular-Restaurants-of-the-World/", "_blank")}>https://wattierdan.github.io/Popular-Restaurants-of-the-World/</a>
+    <b>Demo:</b> <a href className="hyper-link" onClick={() => window.open("https://wattierdan.github.io/Popular-Restaurants-of-the-World/", "_blank")}>https://wattierdan.github.io/Popular-Restaurants-of-the-World/</a>
     <br></br>
-    <b>GitHub:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Rinzler8806/Popular-Restaurants-of-the-World-1")}>https://github.com/Rinzler8806/Popular-Restaurants-of-the-World-1</a>
+    <b>GitHub:</b> <a href className="hyper-link" onClick={() => window.open("https://github.com/Rinzler8806/Popular-Restaurants-of-the-World-1")}>https://github.com/Rinzler8806/Popular-Restaurants-of-the-World-1</a>
     </>
     )
     PopupboxManager.open({ content })
@@ -65,9 +64,9 @@ This app has been created with the intention to be able to view create and track
   <br></br>
   Tools: Express, MongoDB, NodeJS, JSON
     </p>
-    <b>Demo: </b> <a className="hyper-link" onClick={() => window.open("https://fitnesstracker808.herokuapp.com/exercise?id=60b84fdcf99be00015ab65f6", "_blank")}>https://fitnesstracker808.herokuapp.com/exercise?id=60b84fdcf99be00015ab65f6</a>
+    <b>Demo: </b> <a href className="hyper-link" onClick={() => window.open("https://fitnesstracker808.herokuapp.com/exercise?id=60b84fdcf99be00015ab65f6", "_blank")}>https://fitnesstracker808.herokuapp.com/exercise?id=60b84fdcf99be00015ab65f6</a>
     <br></br>
-    <b>GitHub: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/Rinzler8806/fitnessTracker")}>https://github.com/Rinzler8806/fitnessTracker</a>
+    <b>GitHub: </b> <a href className="hyper-link" onClick={() => window.open("https://github.com/Rinzler8806/fitnessTracker")}>https://github.com/Rinzler8806/fitnessTracker</a>
     </>
     )
     PopupboxManager.open({content});
@@ -108,9 +107,9 @@ Offline entries should be added to tracker.
 <br></br>
 Tools: HTML, CSS, JavaScript, Bootstrap, Service-Worker
     </p>
-    <b>Demo: </b> <a className="hyper-link" onClick={() => window.open("https://budgettracker916.herokuapp.com/", "_blank")}>https://budgettracker916.herokuapp.com/</a>
+    <b>Demo: </b> <a href className="hyper-link" onClick={() => window.open("https://budgettracker916.herokuapp.com/", "_blank")}>https://budgettracker916.herokuapp.com/</a>
     <br></br>
-    <b>GitHub: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/Rinzler8806/BudgetTracker")}>https://github.com/Rinzler8806/BudgetTracker</a>
+    <b>GitHub: </b> <a href className="hyper-link" onClick={() => window.open("https://github.com/Rinzler8806/BudgetTracker")}>https://github.com/Rinzler8806/BudgetTracker</a>
     </>
     )
     PopupboxManager.open({content});
@@ -147,9 +146,9 @@ Tools: HTML, CSS, JavaScript, Bootstrap, Service-Worker
   <br></br>
   Tools: NodeJS, Chat Engine API, React, React-Bootstrap, Chat Engine UI, Libre Translate
       </p>
-      <b>Demo: </b> <a className="hyper-link" onClick={() => window.open("https://pangeachat.herokuapp.com/", "_blank")}>https://pangeachat.herokuapp.com/</a>
+      <b>Demo: </b> <a href className="hyper-link" onClick={() => window.open("https://pangeachat.herokuapp.com/", "_blank")}>https://pangeachat.herokuapp.com/</a>
       <br></br>
-      <b>GitHub: </b> <a className="hyper-link" onClick={() => window.open("https://github.com/Rinzler8806/pangea-chat")}>https://github.com/Rinzler8806/pangea-chat</a>
+      <b>GitHub: </b> <a href className="hyper-link" onClick={() => window.open("https://github.com/Rinzler8806/pangea-chat")}>https://github.com/Rinzler8806/pangea-chat</a>
       </>
       )
       PopupboxManager.open({content});

@@ -20,6 +20,25 @@
 
 p {
   font-family: 'Montserrat SemiBold';
+  border-radius: 5px;
+  padding: 4px;
+  box-shadow: 0 10px 20px var(--primary-blue), 0 6px 6px rgba(0,0,0,0.23);
+  color: var(--primary-green);
+  background-color: rgb(22, 22, 22);
+}
+
+.d-flex {
+  font-family: 'Montserrat SemiBold';
+  border-radius: 5px;
+  padding: 4px;
+  color: var(--primary-green);
+}
+
+.pt-3 {
+  font-family: 'Montserrat SemiBold';
+  border-radius: 5px;
+  padding: 4px;
+  color: var(--primary-green);
 }
 
 .App-logo {
@@ -64,7 +83,9 @@ nav {
 }
 
 .shaneLogo {
-  width: 16.0rem;
+  width: 12rem;
+  position: relative;
+  bottom: 50px;
 }
 
 /* Menu Links */
@@ -89,12 +110,13 @@ nav ul li {
   margin-left: 12px;
   color: var(--primary-white) !important;
   border-top: 0.1875rem solid var(--primary-black);
+  margin-top: 9px;
 }
 
 .navbar-brand {
   max-width: 17.25rem;
   padding: 0 !important;
-  height: 13rem !important;
+  height: 5.5rem !important;
 }
 
 @media(max-width: 768px) {
@@ -112,7 +134,6 @@ nav ul li {
 }
 
 .fixed-top {
-  /* position:  */
   top: 0%;
   right: 0;
   left: 0;
@@ -195,13 +216,16 @@ nav ul li {
 
 /* About */
 
-
+#root {
+  background-color:var(--primary-dark-grey);
+}
 
 .profile-img {
   width: 16rem;
   border-radius: 50%;
   padding: .3rem;
-  border: 1px solid var(--primary-green)
+  border: 1px solid var(--primary-green);
+  box-shadow: 0 10px 20px var(--primary-blue), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .about-heading {
@@ -253,6 +277,8 @@ nav ul li {
 .btn-main-offer-experience {
   /* border: 1px solid var(--primary-purple); */
   text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0 10px 20px var(--primary-purple), 0 6px 6px rgba(0,0,0,0.23);
   border-radius: 4px;
   padding: 0.625rem 10px 12px 12px 12px;
   color: var(--primary-blue);
@@ -286,9 +312,10 @@ nav ul li {
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-  border: 0.3125rem solid var(--primary-dark-grey);
-  background-color: var(--primary-green);
+  border: 0.3125rem solid var(--primary-black);
+  background-color: var(--primary-purple);
   margin-top: 0.625rem;
+  box-shadow: 0 10px 20px var(--primary-purple), 0 6px 6px rgba(0,0,0,0.23);
   z-index: 3;
 }
 
@@ -341,7 +368,7 @@ nav ul li {
   width: 15rem;
   margin: 0 auto;
   border: 1px solid var(--primary-green);
-  padding: 0 0.5rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   justify-content: center;
 }
 
@@ -351,11 +378,15 @@ nav ul li {
 }
 
 .popupbox-wrapper {
-  margin-top: 7rem;
+  margin-top: .5rem;
+  height: 1000px;
 }
 
 .popupbox-titleBar {
-  margin-top: 2rem;
+  z-index: 2000;
+  padding: 2px;
+  top: 10px;
+  margin-top: 5.5rem;
 }
 
 /*OVERFLOW BOX*/
@@ -389,12 +420,14 @@ nav ul li {
   opacity: 70%;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+  left: 100px;
+  bottom: 50px;
 }
 
 /*POPUPBOX*/
 .portfolio-image-popupbox {
   width: 45rem;
-  padding: 0 0.5rem;
+  padding: 0.5rem 0.5rem;
 }
 
 .hyper-link {
@@ -424,13 +457,14 @@ nav ul li {
 }
 }
 
-@media(max-height: 570px) {
+@media(max-height: 812px) {
   .popupbox-content {
     height: 100%;
   }
   
     .portfolio-image-popupbox {
       width: 100%;
+      padding: 4px;
   }
   }
 

@@ -12,13 +12,13 @@ export const Footer = () => {
                 <div className="row">
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="d-flex">
-                            <p>Sacramento, California, USA</p>
+                            Sacramento, California, USA
                         </div>
                         <div className="d-flex">
                             <a href="tel:916-396-6332">+1(916)396-6332</a>
                         </div>
                         <div className="d-flex">
-                            <p>Shane.Rogers916@gmail.com</p>
+                            <a href="mailto:Shane.Rogers916@gmail.com">Shane.Rogers916@gmail.com</a>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-2 col-sm-6">
@@ -54,10 +54,10 @@ export const Footer = () => {
                                 <LinkedinIcon className="mx-3" size={50}/>
                             </LinkedinShareButton>
                         </div>
-                        <p className="pt-3 text-center">
+                        <div className="pt-3 text-center">
                             Copyright&copy;
-                            {new Date().getFullYear()}&nbsp;Shane's Web Dev & Design | All Rights Reserved
-                        </p>
+                            {new Date().getFullYear()}&nbsp;Shane's Portfolio | All Rights Reserved
+                        </div>
                     </div>
                 </div>
             </div>
