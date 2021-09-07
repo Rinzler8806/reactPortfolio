@@ -8,7 +8,7 @@ const Experience = () => {
       <h1>Experience</h1>
     </div>
     <div className="d-flex justify-content-center my-5">
-    <a href="https://drive.google.com/file/d/1OcUqMbDZ0OtgAnNS7iGPEJDAuLoEqsJY/view?usp=sharing" download className="btn-main-offer-experience">Download Resume</a>
+    <a href="https://drive.google.com/file/d/1EK6gjlomC1OKC_UivKT3Fw6PHaE9wl-Q/view?usp=sharing" download className="btn-main-offer-experience">Download Resume</a>
     </div>
     <div className="container experience-wrapper">
       <div className="timeline-block timeline-block-right">
