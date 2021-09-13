@@ -27,6 +27,12 @@ p {
   background-color: rgb(22, 22, 22);
 }
 
+  @media (max-height: 800px) {
+    p {
+    font-size: 11px;
+  }
+  }
+
 .d-flex {
   font-family: 'Montserrat SemiBold';
   border-radius: 5px;
@@ -447,11 +453,22 @@ nav ul li {
 }
 }
 
-@media(max-height: 570px) {
+@media(max-height: 640px) {
 .popupbox-wrapper {
   height: 100%;
 }
 
+.popupbox-titleBar {
+  z-index: 2000;
+  padding: 2px;
+  top: 10px;
+  margin-top: .5rem;
+}
+
+.popupbox-content {
+  height: 100%;
+  margin-top: 30px;
+}
   .portfolio-image-popupbox {
     width: 50%;
 }
@@ -460,8 +477,10 @@ nav ul li {
 @media(max-height: 812px) {
   .popupbox-content {
     height: 100%;
+    margin-top: 30px;
   }
   
+
     .portfolio-image-popupbox {
       width: 100%;
       padding: 4px;
