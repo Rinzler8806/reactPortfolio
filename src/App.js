@@ -37,23 +37,6 @@ function App() {
     }}
     />
     <Navbar/>
-    {/* <ul>
-      <li>
-      <Link to="/Header">Home</Link>
-      </li>
-      <li>
-      <Link to="/About">About</Link>
-      </li>
-      <li>
-      <Link to="/Experience">Experience</Link>
-      </li>
-      <li>
-      <Link to="/Portfolio">Portfolio</Link>
-      </li>
-      <li>
-      <Link to="/Contacts">Contact</Link>
-      </li>
-    </ul> */}
     <Header />
     <About />
     <Experience />
