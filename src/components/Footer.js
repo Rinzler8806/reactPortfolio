@@ -47,7 +47,7 @@ export const Footer = () => {
                     <div className="col-lg-5 col-md-5 col-s-6 align-items-center">
                         <div className="d-flex justify-content-center">
                             <LinkedinShareButton
-                            url={"https://www.linkedin.com/in/shane-rogers-124366aa/"}
+                            url={"https://www.linkedin.com/in/shanerogers916/"}
                             quote={"FullStack Developer"}
                             hashtag="#javascript"
                             >
