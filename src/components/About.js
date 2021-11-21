@@ -30,6 +30,9 @@ const About = () => {
                     <br></br>
                     <br></br>
                     I am currently learning how to code in Solidity as well.
+                    <br></br>
+                    <br></br>
+                    Feel free to reach out if you would like to collaborate on any projects!
                     </p>
                 </div>
             </div>
