@@ -1,5 +1,6 @@
 import React from "react";
 import prw from "../images/prw.png";
+import cryptotracker from "../images/cryptotracker.png";
 import fitnesstracker from "../images/fitnesstracker.png";
 import budgettracker from "../images/budgettracker.png";
 import pangea from "../images/pangea.png";
@@ -40,7 +41,6 @@ const Portfolio = () => {
       },
     });
   }
-
   const popupboxConfigProw = {
     titleBar: {
       enable: true,
@@ -48,7 +48,47 @@ const Portfolio = () => {
     },
     fadeIn: true,
     fadeInSpeed: 500
+  };
+
+  //CryptoTracker
+
+  const openPopupboxCryptotracker = () => {
+    const content = (
+    <>
+    <img className="portfolio-image-popupbox" src={cryptotracker} alt="cryptotracker"/>
+    <p> Description:
+    An app created using a React framework to display and allow the user to search different crypto currencies. 
+    The fields displayed are the following for each coin: name, image, symbol, price, volume, priceChange, and marketcap. 
+    The price change will reflect whether the price has recently increased or decreased based on the color (red = down, green = up).
+      <br></br>
+      Tools: React Hooks, Axios, and coingecko API (https://www.coingecko.com).
+    </p>
+    <b>Demo:</b> <a href className="hyper-link" onClick={() => window.open("https://crypto-price-tracker916.herokuapp.com/", "_blank")}>https://crypto-price-tracker916.herokuapp.com/</a>
+    <br></br>
+    <b>GitHub:</b> <a href className="hyper-link" onClick={() => window.open("https://github.com/Rinzler8806/crypto-price-tracker")}>https://github.com/Rinzler8806/crypto-price-tracker</a>
+    </>
+    )
+    PopupboxManager.open({ content })
+    PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          text: "Crypto Price Tracker",
+        },
+      },
+    });
   }
+
+  const popupboxConfigCryptotracker = {
+    titleBar: {
+      enable: true,
+      text: "Crypto Price Tracker"
+    },
+    fadeIn: true,
+    fadeInSpeed: 500
+  };
+
+
 
   //fitnesstracker
   const openPopupboxFitnesstracker = () => {
@@ -62,7 +102,7 @@ This app has been created with the intention to be able to view create and track
  The user will also be able to track the name, type, weight, sets, reps, and duration of exercise.
   If the exercise is a cardio exercise, the user will be able to track their distance traveled.
   <br></br>
-  Tools: Express, MongoDB, NodeJS, JSON
+  Tools: Express, MongoDB, NodeJS, Mongoose
     </p>
     <b>Demo: </b> <a href className="hyper-link" onClick={() => window.open("https://fitnesstracker808.herokuapp.com/exercise?id=60b84fdcf99be00015ab65f6", "_blank")}>https://fitnesstracker808.herokuapp.com/exercise?id=60b84fdcf99be00015ab65f6</a>
     <br></br>
@@ -105,7 +145,7 @@ Enter expenses offline.
 When brought back online:
 Offline entries should be added to tracker.
 <br></br>
-Tools: HTML, CSS, JavaScript, Bootstrap, Service-Worker
+Tools: HTML, CSS, JavaScript, Bootstrap, Service-Worker, Mongoose
     </p>
     <b>Demo: </b> <a href className="hyper-link" onClick={() => window.open("https://budgettracker916.herokuapp.com/", "_blank")}>https://budgettracker916.herokuapp.com/</a>
     <br></br>
@@ -144,11 +184,11 @@ Tools: HTML, CSS, JavaScript, Bootstrap, Service-Worker
   <br></br>
   Log in as: Batman and use password: password to view demo.
   <br></br>
-  Tools: NodeJS, Chat Engine API, React, React-Bootstrap, Chat Engine UI, Libre Translate
+  Tools: Node.js, Axios, Chat Engine API, React, React-Bootstrap, Chat Engine UI, Libre Translate API
       </p>
       <b>Demo: </b> <a href className="hyper-link" onClick={() => window.open("https://pangeachat.herokuapp.com/", "_blank")}>https://pangeachat.herokuapp.com/</a>
       <br></br>
-      <b>GitHub: </b> <a href className="hyper-link" onClick={() => window.open("https://github.com/Rinzler8806/pangea-chat")}>https://github.com/Rinzler8806/pangea-chat</a>
+      <b>GitHub: </b> <a href className="hyper-link" onClick={() => window.open("https://github.com/Rinzler8806/Pangea")}>https://github.com/Rinzler8806/Pangea</a>
       </>
       )
       PopupboxManager.open({content});
@@ -184,6 +224,12 @@ Tools: HTML, CSS, JavaScript, Bootstrap, Service-Worker
           <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
         </div>
         {/* - */}
+        <div className="portfolio-image-box" onClick={openPopupboxCryptotracker}>
+          <img className="portfolio-image" src={cryptotracker} alt="cryptotracker" />
+          <div className="overflow"></div>
+          <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+        </div>
+        {/* - */}
         <div className="portfolio-image-box" onClick={openPopupboxFitnesstracker}>
           <img className="portfolio-image" src={fitnesstracker} alt="fitnesstracker" />
           <div className="overflow"></div>
@@ -204,6 +250,7 @@ Tools: HTML, CSS, JavaScript, Bootstrap, Service-Worker
         </div>
         </div>
         <PopupboxContainer {...popupboxConfigProw} />
+        <PopupboxContainer {...popupboxConfigCryptotracker} />
         <PopupboxContainer {...popupboxConfigFitnesstracker} />
         <PopupboxContainer {...popupboxConfigBudgettracker} />
         <PopupboxContainer {...popupboxConfigPangea} />
