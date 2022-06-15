@@ -19,7 +19,7 @@
 }
 
 p {
-  font-family: 'Montserrat SemiBold';
+  font-family: Open Sans,sans-serif;
   border-radius: 5px;
   padding: 4px;
   box-shadow: 0 10px 20px var(--primary-blue), 0 6px 6px rgba(0,0,0,0.23);
