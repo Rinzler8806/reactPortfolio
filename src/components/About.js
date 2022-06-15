@@ -23,10 +23,10 @@ const About = () => {
                     I feel that it is important to keep an open communication channel in order to support all team members moving in the same direction toward a common goal.
                     <br></br>
                     <br></br>
-                    I am experienced in the following languages and frameworks: JavaScript, HTML5, CSS, SQL, NoSQL, MongoDB, and React.
+                    I am experienced in the following languages and frameworks: JavaScript, Solidity, HTML5, CSS, mySQL, NoSQL, MongoDB, and React.
                     <br></br>
                     <br></br>
-                    Some additional tools I have utilized are API, Express, React, Node.js, Handlebars, Query, Bootstrap, Git Bash, Visual Studio Code.
+                    Some additional tools I have utilized are API, Babel, Express, React, Redux, NextJS, NodeJS, NPM, JQuery, Tailwind CSS, Bootstrap, Git, Remix, Web3, Webpack, Hardhat, Visual Studio Code, RESTapi.
                     <br></br>
                     <br></br>
                     I am currently learning how to code in Solidity as well.

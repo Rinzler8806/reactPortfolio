@@ -38,7 +38,7 @@ const Experience = () => {
             <p>Balfour Beatty
               <br></br>
               <br></br>
-              ●	Preparation, maintenance, and implementation of various document control entities such as daily reports, material procurement logs, submittal logs, as-builts, testing and inspection logs, RFI logs, and change order logs.
+              ●	Prepared, maintained, and implemented various document control entities such as daily reports, material procurement logs, RFI logs, and change order logs.
               <br></br>
               ●	Understanding, drafting, and enforcement of contracts, which saved the company over $200,000.
               <br></br>
@@ -52,7 +52,7 @@ const Experience = () => {
         <div className="timeline-block timeline-block-right">
         <div className="marker"></div>
         <div className="timeline-content">
-          <h3>2020-2021</h3>
+          <h3>2020-2022</h3>
             <p>ITS Solutions
               <br></br>
               <br></br>
